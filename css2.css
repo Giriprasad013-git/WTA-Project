@@ -1,0 +1,504 @@
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #edecf0;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    
+    .div1 {
+        background-color: white;
+        width: 100%;
+        height: 70px;
+        /* margin-top: 0%; */
+    }
+    
+    h1 {
+        display: inline;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        margin-left: 25px;
+    }
+    
+    .logo svg {
+        width: 40px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .nav-links {
+        padding: 30px 0;
+        margin-right: 200px;
+    }
+    
+    .nav-links li {
+        display: inline-block;
+        margin: 0 15px;
+        font-size: 17px;
+    }
+    
+    .nav-links li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        padding: 5px 0;
+        position: relative;
+    }
+    
+    .nav-links li a::after {
+        content: '';
+        background: red;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: width 0.5s;
+    }
+    
+    .nav-links li a:hover::after {
+        width: 100%;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: powderblue;
+        position: relative;
+    }
+    /* .btn {
+    background: coral;
+    color: aliceblue;
+    padding: 10px 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#btn {
+    margin-right: 20px;
+} */
+    
+    .div2 {
+        width: 1130px;
+        height: 340px;
+        background-color: gold;
+        display: flex;
+        margin-left: 70px;
+        margin-right: 15px;
+        transform: scale(1.1);
+    }
+    
+    .course {
+        width: 261px;
+        height: 290px;
+        background-color: bisque;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    
+    .course img {
+        width: 261px;
+        height: 200px;
+    }
+    
+    .div3 {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    
+    .price,
+    h5 {
+        display: inline;
+    }
+    
+    form table tr td {
+        padding-bottom: 30px;
+    }
+    
+    table {
+        margin-left: 30px;
+    }
+    
+    #button {
+        margin-left: 47%;
+        width: 80px;
+        height: 30px;
+        margin-bottom: 50px;
+        color: pink;
+        background-color: purple;
+        border-radius: 20px;
+        margin-top: 50px;
+    }
+    
+    .mm1,
+    .mm2 {
+        display: none;
+    }
+    
+    .course:hover {
+        transform: scale(1.01);
+    }
+    /*     
+    .form-cl {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: slategrey;
+    } */
+    
+    span.form {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        background-color: rgb(112, 128, 144);
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
+    
+    .form-u {
+        background-color: rgb(255, 255, 255, 0.4);
+        padding-top: 40px;
+        padding-left: 8px;
+        padding-right: 40px;
+        border-radius: 9px;
+        width: 50%;
+    }
+    
+    #rollno,
+    #name1,
+    #sub11,
+    #sub12,
+    #sub13,
+    #sub14,
+    #sub15 {
+        width: 334px;
+        height: 35px;
+        border-radius: 6px;
+        border-bottom-color: #496d9b;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        padding: 5px;
+        font-size: 15px;
+    }
+    /* button */
+    /* From uiverse.io by @alexmaracinaru */
+    
+    .cta {
+        position: relative;
+        margin: auto;
+        padding: 12px 18px;
+        transition: all 0.2s ease;
+        border: none;
+        background: none;
+    }
+    
+    .cta:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 50px;
+        background: #8cbaf1;
+        width: 45px;
+        height: 45px;
+        transition: all 0.3s ease;
+    }
+    
+    .cta span {
+        position: relative;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: #234567;
+    }
+    
+    .cta svg {
+        position: relative;
+        top: 0;
+        margin-left: 10px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: #234567;
+        stroke-width: 2;
+        transform: translateX(-5px);
+        transition: all 0.3s ease;
+    }
+    
+    .cta:hover:before {
+        width: 100%;
+        background: #8cbaf1;
+    }
+    
+    .cta:hover svg {
+        transform: translateX(0);
+    }
+    
+    .cta:active {
+        transform: scale(0.95);
+    }
+    
+    label {
+        font-size: 20px;
+    }
+    /* From uiverse.io by @felipesntr */
+    
+    .full-rounded {
+        font-size: 16px;
+        position: relative;
+        margin: auto;
+        padding: 1em 2.5em 1em 2.5em;
+        border: none;
+        background: rgb(85, 148, 203);
+        transition: all 0.1s linear;
+        box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+    }
+    /* 
+.full-rounded:active {
+    transform: scale(0.95);
+} */
+    
+    .full-rounded span {
+        color: #464646;
+    }
+    /* .full-rounded .border {
+    position: absolute;
+    border: 0.15em solid rgb(66, 105, 139);
+    transition: all 0.3s 0.08s linear;
+    top: 50%;
+    left: 50%;
+    width: 9em;
+    height: 3em;
+    transform: translate(-50%, -50%);
+} */
+    
+    .full-rounded:hover {
+        transform: scale(1.1);
+        border: 1px solid #0e1216;
+    }
+    
+    .full-rounded {
+        border-radius: 2em;
+        margin-left: 41%;
+        margin-bottom: 44px;
+    }
+    
+    .full-rounded span {
+        color: rgb(28, 27, 27)
+    }
+    
+    .student-details {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-family: 'Pacifico', cursive;
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    
+    .fot-d1 {
+        width: 100%;
+        height: auto;
+        background-color: #496d9b;
+        /* position: inherit; */
+        /* margin-top: 325px; */
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .form {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding-bottom: 28px;
+        padding-top: 36px;
+        background-color: #dbdbf6;
+        position: relative;
+    }
+    
+    .fot-d1d {
+        width: 345px;
+        background-color: rgb(36 34 37);
+        height: auto;
+        margin: 25px;
+        margin-right: 43px;
+        padding-bottom: 14px;
+        border-radius: 10px;
+    }
+    
+    hr {
+        width: 45px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        padding-top: 10p;
+    }
+    
+    h4 {
+        color: azure;
+    }
+    
+    p.p1 {
+        margin-bottom: 10px;
+        margin-right: 17px;
+        color: aqua;
+        margin-left: 19px;
+    }
+    
+    .widget-title1 {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    
+    a.btn.btn-default {
+        margin-left: 23px;
+        background-color: coral;
+        padding-left: 7px;
+        padding-right: 7px;
+        /* margin-bottom: -20px; */
+        /* height: 17px; */
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-radius: 4px;
+    }
+    
+    .form-u {
+        background-color: rgb(217 154 154 / 40%);
+        padding-top: 40px;
+        padding-left: 8px;
+        padding-right: 40px;
+        border-radius: 9px;
+        width: 50%;
+    }
+    
+    tr,
+    th {
+        text-align: center;
+    }
+    
+    .tcc:nth-child(even) {
+        background-color: #fbffff;
+    }
+    
+    .tcc:nth-child(odd) {
+        background-color: #d1ecd8;
+    }
+    
+    .riport-tab tr th {
+        background-color: #75f999;
+        padding: 10px;
+    }
+    
+    section {
+        margin-block: 21px;
+    }
+    
+    .footer {
+        position: relative;
+        /* margin-top: 6px; */
+    }
+    
+    .divvi2 {
+        padding-block: 75px;
+        margin-right: 10px;
+    }
+    
+    table.riport-tab {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    td {
+        padding-right: 33px;
+        padding-left: 33px;
+        padding-block: 15px;
+    }
+    
+    .up-a {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: auto;
+        background-color: #dbbbf6;
+        width: 100%;
+        position: relative;
+    }
+    
+    .up-b {
+        height: auto;
+        width: auto;
+        background-color: #75e4f9;
+        position: relative;
+        padding-block: 30px;
+        margin-block: 30px;
+        justify-content: center;
+        align-items: center;
+        padding-right: 83px;
+        display: block;
+        padding-left: 54px;
+    }
+    /* input#in-1 {
+        width: 88%;
+        height: 35px;
+        border-radius: 6px;
+        border-bottom-color: #496d9b;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        padding: 5px;
+        font-size: 15px;
+        margin-left: 0px;
+    }
+     */
+    
+    .up-b1 {
+        padding-bottom: 30px;
+    }
+    
+    .up-b22 {
+        padding: 9px;
+        background-color: cadetblue;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    input#in-1 {
+        width: 35%;
+        height: 35px;
+        border-radius: 6px;
+        border-bottom-color: #496d9b;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+        padding: 5px;
+        font-size: 15px;
+        margin-left: 399px;
+    }
